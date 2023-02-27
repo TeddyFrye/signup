@@ -64,7 +64,7 @@
                 </div>
                 <div>
                   <label for="phone-number">PHONE NUMBER</label
-                  ><input type="tel" id="phone-number" name="phone-number" />
+                  ><input type="tel" id="phone" name="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
                 </div>
               </div>
               <div>
@@ -87,6 +87,14 @@
                     name="confirm-password"
                   />
                 </div>
+                <p>Would you like to be bothered with useless e-mails?</p>
+
+<form>
+  <input type="radio" id="html" name="email_pref" value="confirm">
+  <label for="confirm">Yes, please!</label><br>
+  <input type="radio" id="css" name="email_pref" value="deny">
+  <label for="deny">No, I hate fun.</label><br>
+</form>
               </div>
             </div>
           </div>
