@@ -14,7 +14,8 @@
   }
   
 .emph{
-  font-style: italic
+  font-style: italic;
+  font-size: 40px;
 }
 
   .content {
@@ -28,7 +29,7 @@
     background-position: center center;
     background-image: url("./totodile.png");
     background-size: cover;
-    margin-right: 3px
+    margin-right: 3px;
     flex: 3;
     display: flex;
     flex-direction: column;
