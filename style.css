@@ -35,7 +35,6 @@ body {
     justify-content: center; /* horizontally center align the contents */
 }
 
-
 @font-face {
     font-family:'Norse Bold' ;
     src: url('Norse-Bold.otf');
@@ -49,12 +48,23 @@ body {
     font-family: 'Norse Bold';
 }
 
+.left-panel img {
+    width: 20%;
+    max-width: 300px;
+}
+
 .input-container{
+    display: flex; /* make this a flex container */
+    justify-content: space-between; /* space the columns out */
     padding: 20px;
     background-color:white;
     border-radius: 8px;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
     width: 100%;
+}
+
+.input-column {
+    width: 45%; /* adjust this value if needed */
 }
 
 .right-panel {
@@ -67,10 +77,6 @@ body {
     align-items: center;
 }
 
-.left-panel img {
-    width: 20%;
-    max-width: 300px;
-}
 
 .right-panel input {
     display: block;
@@ -82,10 +88,12 @@ body {
 
 .right-panel button {
     display: block;
-    margin: 10px auto;
+    margin-right: 60%;
     padding: 10px;
     background-color: #596D48;
     color: white;
     border: none;
-    width: 100%;
+    width: 25%;
+    border-radius: 6px;
+    box-shadow: 2px 4px 10px 0 rgba(0,0,0,0.5);
 }
