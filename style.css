@@ -20,6 +20,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.background-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;  
+    width: 100%; /* now the box will always be as wide as .left-panel */
+    position: absolute; /* position it absolutely inside .left-panel */
+    top: 20%; /* align it with the top of .left-panel */
+    left: 0; /* align it with the left of .left-panel */
+    display: flex; /* align image and text horizontally */
+    align-items: center; /* vertically center align the contents */
+    justify-content: center; /* horizontally center align the contents */
+}
+
+
+@font-face {
+    font-family:'Norse Bold' ;
+    src: url('Norse-Bold.otf');
+}
+
+.title{
+    font-size: 100px;
+    font-weight: 600;
+    align-items:center;
+    color: white;
+    font-family: 'Norse Bold';
 }
 
 .input-container{
@@ -41,7 +68,7 @@ body {
 }
 
 .left-panel img {
-    width: 50%;
+    width: 20%;
     max-width: 300px;
 }
 
