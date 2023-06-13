@@ -23,18 +23,6 @@ body {
     position: relative;
 }
 
-.background-box {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;  
-    width: 100%; /* now the box will always be as wide as .left-panel */
-    position: absolute; /* position it absolutely inside .left-panel */
-    top: 20%; /* align it with the top of .left-panel */
-    left: 0; /* align it with the left of .left-panel */
-    display: flex; /* align image and text horizontally */
-    align-items: center; /* vertically center align the contents */
-    justify-content: center; /* horizontally center align the contents */
-}
-
 @font-face {
     font-family:'Norse Bold' ;
     src: url('Norse-Bold.otf');
@@ -53,20 +41,49 @@ body {
     max-width: 300px;
 }
 
-.input-container{
-    display: flex; /* make this a flex container */
-    justify-content: space-between; /* space the columns out */
+.background-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;  
+    width: 100%; /* now the box will always be as wide as .left-panel */
+    position: absolute; /* position it absolutely inside .left-panel */
+    top: 20%; /* align it with the top of .left-panel */
+    left: 0; /* align it with the left of .left-panel */
+    display: flex; /* align image and text horizontally */
+    align-items: center; /* vertically center align the contents */
+    justify-content: center; /* horizontally center align the contents */
+}
+
+.paragraph{
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+  
+.input-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
     padding: 20px;
     background-color:white;
-    border-radius: 8px;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
-    width: 100%;
 }
 
 .input-column {
     width: 45%; /* adjust this value if needed */
 }
 
+.input-column right {
+    padding-left: 200px;
+
+}
 .right-panel {
     flex: 1; 
     background-color: white;
@@ -76,7 +93,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 
 .right-panel input {
     display: block;
@@ -93,7 +109,15 @@ body {
     background-color: #596D48;
     color: white;
     border: none;
-    width: 25%;
+    width: 30%;
     border-radius: 6px;
     box-shadow: 2px 4px 10px 0 rgba(0,0,0,0.5);
+}
+
+.log-in {
+    display: block;
+    margin-left: 10%;
+    padding:10px;
+    border: none;
+    width: 100%;
 }
